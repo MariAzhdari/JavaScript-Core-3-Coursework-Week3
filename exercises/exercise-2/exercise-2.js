@@ -70,3 +70,24 @@ let hogwarts = [
     occupation: "Teacher",
   },
 ];
+ 
+// ## Task 1
+const namePe = (arr) => {
+  arr.forEach(e => {
+    const{firstName,lastName,house} = e ;
+    console.log(`${firstName} ${lastName}`);
+  })
+}
+namePe(hogwarts)
+console.log("************next task***********");
+
+// ## Task 2
+const howHasDog =(arr1) =>{
+  arr1.forEach(element =>{
+    const{firstName ,lastName ,pet ,occupation} = element;
+    if (pet !== null && occupation === "Teacher") {
+      console.log(`${firstName} ${lastName}`);
+    }
+  })
+}
+howHasDog(hogwarts)
