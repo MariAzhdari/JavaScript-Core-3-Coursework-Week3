@@ -16,6 +16,9 @@ Take a look at the following code:
 
 Explain why line 4 and line 6 output different numbers.
 
+ one of the is in global scope and other one is in function scope.
+
+
 ## Question 2
 
 Take a look at the following code:
@@ -30,10 +33,13 @@ function f1()
 }
 
 console.log(f1())
-console.log(y)
+console.log(y) // y is global so is undefined
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+y will be undefined and  f1() will be 10
+
 
 ## Question 3
 
@@ -62,3 +68,5 @@ console.log(y);
 ```
 
 What will be the output of this code. Explain your answer in 50 words or less.
+
+ we are taking a value from global, modifying it in the function scope, and then returning it again, the output will be 10.
